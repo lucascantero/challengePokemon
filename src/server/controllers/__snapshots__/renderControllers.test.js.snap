@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing renderControllers Should match snapshot 1`] = `
+"
+            <html lang=\\"en\\">
+                <head>
+                    <meta charset=\\"UTF-8\\">
+                    <meta name=\\"viewport\\" content=\\"width=device-width, initial-scale=1.0\\">
+                    <link rel=\\"stylesheet\\" href=\\"/public/dist/static/app.css\\">
+                    <title>App Test</title>            
+                </head>
+                <body>   
+                    <div id=\\"root\\"> <div class=\\"publicaciones__contenedor\\"><div class=\\"publicaciones__wrapper\\"><button>Anterior</button><button>Siguiente</button><button>INGLES</button><button>ESPAÑOL</button><h1>Hola</h1><ul class=\\"card__ul\\"></ul></div></div> </div>
+                    <script src='/public/dist/static/app.js'></script>
+                </body>
+            </html>
+        "
+`;

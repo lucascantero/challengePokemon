@@ -1,0 +1,17 @@
+.buttonLanguage {
+    &__button {
+        padding: 8px;
+        font-weight: 300;
+        font-size: 11px;
+        color: #1883ba;
+        background-color: #ffffff;
+        border: 0px;
+        margin: 5px;
+        outline: none;
+    }
+
+    &__wrapper {
+        display:flex;
+        justify-content:flex-end;
+    }
+}

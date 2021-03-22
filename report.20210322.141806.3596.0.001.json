@@ -1,0 +1,761 @@
+
+{
+  "header": {
+    "reportVersion": 1,
+    "event": "Allocation failed - JavaScript heap out of memory",
+    "trigger": "FatalError",
+    "filename": "report.20210322.141806.3596.0.001.json",
+    "dumpEventTime": "2021-03-22T14:18:06Z",
+    "dumpEventTimeStamp": "1616433486787",
+    "processId": 3596,
+    "cwd": "C:\\Users\\LUCAS\\Desktop\\challengePokemon",
+    "commandLine": [
+      "node",
+      "C:\\Users\\LUCAS\\Desktop\\challengePokemon\\node_modules\\.bin\\\\..\\concurrently\\bin\\concurrently.js",
+      "--kill-others",
+      "npm run start:client",
+      "npm run start:server"
+    ],
+    "nodejsVersion": "v12.10.0",
+    "wordSize": 64,
+    "arch": "x64",
+    "platform": "win32",
+    "componentVersions": {
+      "node": "12.10.0",
+      "v8": "7.6.303.29-node.16",
+      "uv": "1.31.0",
+      "zlib": "1.2.11",
+      "brotli": "1.0.7",
+      "ares": "1.15.0",
+      "modules": "72",
+      "nghttp2": "1.39.2",
+      "napi": "4",
+      "llhttp": "1.1.4",
+      "http_parser": "2.8.0",
+      "openssl": "1.1.1c",
+      "cldr": "35.1",
+      "icu": "64.2",
+      "tz": "2019a",
+      "unicode": "12.1"
+    },
+    "release": {
+      "name": "node",
+      "headersUrl": "https://nodejs.org/download/release/v12.10.0/node-v12.10.0-headers.tar.gz",
+      "sourceUrl": "https://nodejs.org/download/release/v12.10.0/node-v12.10.0.tar.gz",
+      "libUrl": "https://nodejs.org/download/release/v12.10.0/win-x64/node.lib"
+    },
+    "osName": "Windows_NT",
+    "osRelease": "6.1.7601",
+    "osVersion": "Windows 7 Professional Service Pack 1",
+    "osMachine": "x86_64",
+    "cpus": [
+      {
+        "model": "Intel(R) Core(TM) i5-4670 CPU @ 3.40GHz",
+        "speed": 3400,
+        "user": 3383568,
+        "nice": 0,
+        "sys": 1663937,
+        "idle": 24567396,
+        "irq": 118607
+      },
+      {
+        "model": "Intel(R) Core(TM) i5-4670 CPU @ 3.40GHz",
+        "speed": 3400,
+        "user": 3548367,
+        "nice": 0,
+        "sys": 1315260,
+        "idle": 24750837,
+        "irq": 19874
+      },
+      {
+        "model": "Intel(R) Core(TM) i5-4670 CPU @ 3.40GHz",
+        "speed": 3400,
+        "user": 3529865,
+        "nice": 0,
+        "sys": 1446035,
+        "idle": 24638439,
+        "irq": 21824
+      },
+      {
+        "model": "Intel(R) Core(TM) i5-4670 CPU @ 3.40GHz",
+        "speed": 3400,
+        "user": 4062968,
+        "nice": 0,
+        "sys": 1397020,
+        "idle": 24154227,
+        "irq": 18345
+      }
+    ],
+    "networkInterfaces": [
+      {
+        "name": "Conexión de área local",
+        "internal": false,
+        "mac": "38:2c:4a:ba:61:94",
+        "address": "2800:810:445:753::1001",
+        "netmask": "ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff",
+        "family": "IPv6",
+        "scopeid": 0
+      },
+      {
+        "name": "Conexión de área local",
+        "internal": false,
+        "mac": "38:2c:4a:ba:61:94",
+        "address": "2800:810:445:753:211c:c46a:69e8:c2ce",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 0
+      },
+      {
+        "name": "Conexión de área local",
+        "internal": false,
+        "mac": "38:2c:4a:ba:61:94",
+        "address": "2800:810:445:753:c028:a5cc:6293:4abc",
+        "netmask": "ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff",
+        "family": "IPv6",
+        "scopeid": 0
+      },
+      {
+        "name": "Conexión de área local",
+        "internal": false,
+        "mac": "38:2c:4a:ba:61:94",
+        "address": "fe80::211c:c46a:69e8:c2ce",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 11
+      },
+      {
+        "name": "Conexión de área local",
+        "internal": false,
+        "mac": "38:2c:4a:ba:61:94",
+        "address": "192.168.0.6",
+        "netmask": "255.255.255.0",
+        "family": "IPv4"
+      },
+      {
+        "name": "Loopback Pseudo-Interface 1",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "::1",
+        "netmask": "ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff",
+        "family": "IPv6",
+        "scopeid": 0
+      },
+      {
+        "name": "Loopback Pseudo-Interface 1",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "127.0.0.1",
+        "netmask": "255.0.0.0",
+        "family": "IPv4"
+      }
+    ],
+    "host": "LUCAS-PC"
+  },
+  "javascriptStack": {
+    "message": "No stack.",
+    "stack": [
+      "Unavailable."
+    ]
+  },
+  "nativeStack": [
+    {
+      "pc": "0x000000013f9e6eb9",
+      "symbol": "std::basic_ostream<char,std::char_traits<char> >::operator<<+10873"
+    },
+    {
+      "pc": "0x000000013f9eb24c",
+      "symbol": "std::basic_ostream<char,std::char_traits<char> >::operator<<+28172"
+    },
+    {
+      "pc": "0x000000013f9ea1f8",
+      "symbol": "std::basic_ostream<char,std::char_traits<char> >::operator<<+23992"
+    },
+    {
+      "pc": "0x000000013fad63cb",
+      "symbol": "v8::base::CPU::has_sse+37563"
+    },
+    {
+      "pc": "0x00000001402c976e",
+      "symbol": "v8::Isolate::ReportExternalAllocationLimitReached+94"
+    },
+    {
+      "pc": "0x00000001402b1711",
+      "symbol": "v8::SharedArrayBuffer::Externalize+833"
+    },
+    {
+      "pc": "0x000000014017f1cc",
+      "symbol": "v8::internal::Heap::EphemeronKeyWriteBarrierFromCode+1436"
+    },
+    {
+      "pc": "0x0000000140186d81",
+      "symbol": "v8::internal::Heap::PageFlagsAreConsistent+3761"
+    },
+    {
+      "pc": "0x000000014017c7a3",
+      "symbol": "v8::internal::Heap::CollectGarbage+1235"
+    },
+    {
+      "pc": "0x000000014017b044",
+      "symbol": "v8::internal::Heap::AddRetainedMap+2356"
+    },
+    {
+      "pc": "0x000000014019a855",
+      "symbol": "v8::internal::Factory::NewFillerObject+53"
+    },
+    {
+      "pc": "0x000000013ff094ed",
+      "symbol": "v8::internal::interpreter::JumpTableTargetOffsets::iterator::operator=+3981"
+    },
+    {
+      "pc": "0x00000001406e300d",
+      "symbol": "v8::internal::SetupIsolateDelegate::SetupHeap+575565"
+    },
+    {
+      "pc": "0x00000001406ff38c",
+      "symbol": "v8::internal::SetupIsolateDelegate::SetupHeap+691148"
+    },
+    {
+      "pc": "0x0000000140660abc",
+      "symbol": "v8::internal::SetupIsolateDelegate::SetupHeap+41724"
+    },
+    {
+      "pc": "0x000000014065a10c",
+      "symbol": "v8::internal::SetupIsolateDelegate::SetupHeap+14668"
+    },
+    {
+      "pc": "0x0000000140660abc",
+      "symbol": "v8::internal::SetupIsolateDelegate::SetupHeap+41724"
+    },
+    {
+      "pc": "0x0000000140660abc",
+      "symbol": "v8::internal::SetupIsolateDelegate::SetupHeap+41724"
+    },
+    {
+      "pc": "0x0000000140660abc",
+      "symbol": "v8::internal::SetupIsolateDelegate::SetupHeap+41724"
+    },
+    {
+      "pc": "0x0000000140660abc",
+      "symbol": "v8::internal::SetupIsolateDelegate::SetupHeap+41724"
+    },
+    {
+      "pc": "0x0000000140660abc",
+      "symbol": "v8::internal::SetupIsolateDelegate::SetupHeap+41724"
+    },
+    {
+      "pc": "0x0000000140660abc",
+      "symbol": "v8::internal::SetupIsolateDelegate::SetupHeap+41724"
+    },
+    {
+      "pc": "0x0000000140660abc",
+      "symbol": "v8::internal::SetupIsolateDelegate::SetupHeap+41724"
+    },
+    {
+      "pc": "0x0000000140660abc",
+      "symbol": "v8::internal::SetupIsolateDelegate::SetupHeap+41724"
+    },
+    {
+      "pc": "0x0000000140660abc",
+      "symbol": "v8::internal::SetupIsolateDelegate::SetupHeap+41724"
+    },
+    {
+      "pc": "0x0000000140660abc",
+      "symbol": "v8::internal::SetupIsolateDelegate::SetupHeap+41724"
+    },
+    {
+      "pc": "0x0000000140660abc",
+      "symbol": "v8::internal::SetupIsolateDelegate::SetupHeap+41724"
+    },
+    {
+      "pc": "0x0000000140660abc",
+      "symbol": "v8::internal::SetupIsolateDelegate::SetupHeap+41724"
+    },
+    {
+      "pc": "0x0000000140660abc",
+      "symbol": "v8::internal::SetupIsolateDelegate::SetupHeap+41724"
+    },
+    {
+      "pc": "0x0000000140660abc",
+      "symbol": "v8::internal::SetupIsolateDelegate::SetupHeap+41724"
+    },
+    {
+      "pc": "0x0000000140660abc",
+      "symbol": "v8::internal::SetupIsolateDelegate::SetupHeap+41724"
+    },
+    {
+      "pc": "0x0000000140660abc",
+      "symbol": "v8::internal::SetupIsolateDelegate::SetupHeap+41724"
+    },
+    {
+      "pc": "0x000000014065a10c",
+      "symbol": "v8::internal::SetupIsolateDelegate::SetupHeap+14668"
+    },
+    {
+      "pc": "0x0000000140660abc",
+      "symbol": "v8::internal::SetupIsolateDelegate::SetupHeap+41724"
+    },
+    {
+      "pc": "0x0000000140660abc",
+      "symbol": "v8::internal::SetupIsolateDelegate::SetupHeap+41724"
+    },
+    {
+      "pc": "0x0000000140660abc",
+      "symbol": "v8::internal::SetupIsolateDelegate::SetupHeap+41724"
+    },
+    {
+      "pc": "0x0000000140660abc",
+      "symbol": "v8::internal::SetupIsolateDelegate::SetupHeap+41724"
+    },
+    {
+      "pc": "0x000000014065e411",
+      "symbol": "v8::internal::SetupIsolateDelegate::SetupHeap+31825"
+    },
+    {
+      "pc": "0x000000014065dffc",
+      "symbol": "v8::internal::SetupIsolateDelegate::SetupHeap+30780"
+    },
+    {
+      "pc": "0x00000001401d6a8c",
+      "symbol": "v8::internal::StackGuard::InitThread+972"
+    },
+    {
+      "pc": "0x00000001401d5776",
+      "symbol": "v8::internal::Execution::Call+182"
+    },
+    {
+      "pc": "0x00000001402a837b",
+      "symbol": "v8::Function::Call+603"
+    },
+    {
+      "pc": "0x000000013fb4afb5",
+      "symbol": "node::CallbackScope::~CallbackScope+1429"
+    },
+    {
+      "pc": "0x000000013fb44753",
+      "symbol": "v8::internal::interpreter::BytecodeNode::operand_scale+179"
+    },
+    {
+      "pc": "0x000000013fa51f80",
+      "symbol": "v8::CpuProfile::GetSamplesCount+19008"
+    },
+    {
+      "pc": "0x000000013fa5277c",
+      "symbol": "v8::CpuProfile::GetSamplesCount+21052"
+    },
+    {
+      "pc": "0x000000013fa4d985",
+      "symbol": "v8::CpuProfile::GetSamplesCount+1093"
+    },
+    {
+      "pc": "0x000000013fb6a262",
+      "symbol": "uv_thread_self+2722"
+    },
+    {
+      "pc": "0x000000013fb6d0ff",
+      "symbol": "uv_pipe_pending_type+3487"
+    },
+    {
+      "pc": "0x000000013fb7721c",
+      "symbol": "uv_loop_init+860"
+    },
+    {
+      "pc": "0x000000013fb77544",
+      "symbol": "uv_run+244"
+    },
+    {
+      "pc": "0x000000013fa9e8f2",
+      "symbol": "v8::internal::UnoptimizedCompilationInfo::feedback_vector_spec+29362"
+    },
+    {
+      "pc": "0x000000013fafa213",
+      "symbol": "node::Start+275"
+    },
+    {
+      "pc": "0x000000013f9bc91c",
+      "symbol": "AES_cbc_encrypt+15180"
+    },
+    {
+      "pc": "0x0000000140790fd8",
+      "symbol": "v8::internal::SetupIsolateDelegate::SetupHeap+1288216"
+    },
+    {
+      "pc": "0x0000000076dd556d",
+      "symbol": "BaseThreadInitThunk+13"
+    },
+    {
+      "pc": "0x0000000076f3372d",
+      "symbol": "RtlUserThreadStart+29"
+    }
+  ],
+  "javascriptHeap": {
+    "totalMemory": 9269248,
+    "totalCommittedMemory": 9269248,
+    "usedMemory": 8317288,
+    "availableMemory": 2190253128,
+    "memoryLimit": 2197815296,
+    "heapSpaces": {
+      "read_only_space": {
+        "memorySize": 262144,
+        "committedMemory": 262144,
+        "capacity": 261832,
+        "used": 31432,
+        "available": 230400
+      },
+      "new_space": {
+        "memorySize": 1048576,
+        "committedMemory": 1048576,
+        "capacity": 1047328,
+        "used": 1047304,
+        "available": 24
+      },
+      "old_space": {
+        "memorySize": 5615616,
+        "committedMemory": 5615616,
+        "capacity": 5568848,
+        "used": 5451008,
+        "available": 117840
+      },
+      "code_space": {
+        "memorySize": 425984,
+        "committedMemory": 425984,
+        "capacity": 240320,
+        "used": 224672,
+        "available": 15648
+      },
+      "map_space": {
+        "memorySize": 790528,
+        "committedMemory": 790528,
+        "capacity": 786800,
+        "used": 490960,
+        "available": 295840
+      },
+      "large_object_space": {
+        "memorySize": 1077248,
+        "committedMemory": 1077248,
+        "capacity": 1068456,
+        "used": 1068456,
+        "available": 0
+      },
+      "code_large_object_space": {
+        "memorySize": 49152,
+        "committedMemory": 49152,
+        "capacity": 3456,
+        "used": 3456,
+        "available": 0
+      },
+      "new_large_object_space": {
+        "memorySize": 0,
+        "committedMemory": 0,
+        "capacity": 1047328,
+        "used": 0,
+        "available": 1047328
+      }
+    }
+  },
+  "resourceUsage": {
+    "userCpuSeconds": 1.326,
+    "kernelCpuSeconds": 0.296,
+    "cpuConsumptionPercent": 0.312524,
+    "maxRss": 43835392,
+    "pageFaults": {
+      "IORequired": 16829,
+      "IONotRequired": 0
+    },
+    "fsActivity": {
+      "reads": 1328,
+      "writes": 1075
+    }
+  },
+  "libuv": [
+  ],
+  "environmentVariables": {
+    "": "C:=C:\\Users\\LUCAS\\Desktop\\challengePokemon",
+    "ACLOCAL_PATH": "C:\\Program Files\\Git\\mingw64\\share\\aclocal;C:\\Program Files\\Git\\usr\\share\\aclocal",
+    "ALLUSERSPROFILE": "C:\\ProgramData",
+    "APPDATA": "C:\\Users\\LUCAS\\AppData\\Roaming",
+    "COMMONPROGRAMFILES": "C:\\Program Files\\Common Files",
+    "CommonProgramFiles(x86)": "C:\\Program Files (x86)\\Common Files",
+    "CommonProgramW6432": "C:\\Program Files\\Common Files",
+    "COMPUTERNAME": "LUCAS-PC",
+    "COMSPEC": "C:\\Windows\\system32\\cmd.exe",
+    "CONFIG_SITE": "C:/Program Files/Git/mingw64/etc/config.site",
+    "DISPLAY": "needs-to-be-defined",
+    "ESET_OPTIONS": "                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               ",
+    "EXEPATH": "C:\\Program Files\\Git",
+    "FP_NO_HOST_CHECK": "NO",
+    "HOME": "C:\\Users\\LUCAS",
+    "HOMEDRIVE": "C:",
+    "HOMEPATH": "\\Users\\LUCAS",
+    "HOSTNAME": "LUCAS-PC",
+    "INFOPATH": "C:\\Program Files\\Git\\usr\\local\\info;C:\\Program Files\\Git\\usr\\share\\info;C:\\Program Files\\Git\\usr\\info;C:\\Program Files\\Git\\share\\info",
+    "INIT_CWD": "C:\\Users\\LUCAS\\Desktop\\challengePokemon",
+    "LANG": "es_ES.UTF-8",
+    "LOCALAPPDATA": "C:\\Users\\LUCAS\\AppData\\Local",
+    "LOGONSERVER": "\\\\LUCAS-PC",
+    "MANPATH": "C:\\Program Files\\Git\\mingw64\\local\\man;C:\\Program Files\\Git\\mingw64\\share\\man;C:\\Program Files\\Git\\usr\\local\\man;C:\\Program Files\\Git\\usr\\share\\man;C:\\Program Files\\Git\\usr\\man;C:\\Program Files\\Git\\share\\man",
+    "MINGW_CHOST": "x86_64-w64-mingw32",
+    "MINGW_PACKAGE_PREFIX": "mingw-w64-x86_64",
+    "MINGW_PREFIX": "C:/Program Files/Git/mingw64",
+    "MSYSTEM": "MINGW64",
+    "MSYSTEM_CARCH": "x86_64",
+    "MSYSTEM_CHOST": "x86_64-w64-mingw32",
+    "MSYSTEM_PREFIX": "C:/Program Files/Git/mingw64",
+    "NODE": "C:\\Program Files\\nodejs\\node.exe",
+    "npm_config_access": "",
+    "npm_config_allow_same_version": "",
+    "npm_config_also": "",
+    "npm_config_always_auth": "",
+    "npm_config_argv": "{\"remain\":[],\"cooked\":[\"run\",\"start:dev\"],\"original\":[\"run\",\"start:dev\"]}",
+    "npm_config_audit": "true",
+    "npm_config_audit_level": "low",
+    "npm_config_auth_type": "legacy",
+    "npm_config_before": "",
+    "npm_config_bin_links": "true",
+    "npm_config_browser": "",
+    "npm_config_ca": "",
+    "npm_config_cache": "C:\\Users\\LUCAS\\AppData\\Roaming\\npm-cache",
+    "npm_config_cache_lock_retries": "10",
+    "npm_config_cache_lock_stale": "60000",
+    "npm_config_cache_lock_wait": "10000",
+    "npm_config_cache_max": "Infinity",
+    "npm_config_cache_min": "10",
+    "npm_config_cafile": "",
+    "npm_config_cert": "",
+    "npm_config_cidr": "",
+    "npm_config_color": "true",
+    "npm_config_commit_hooks": "true",
+    "npm_config_depth": "Infinity",
+    "npm_config_description": "true",
+    "npm_config_dev": "",
+    "npm_config_dry_run": "",
+    "npm_config_editor": "notepad.exe",
+    "npm_config_engine_strict": "",
+    "npm_config_fetch_retries": "2",
+    "npm_config_fetch_retry_factor": "10",
+    "npm_config_fetch_retry_maxtimeout": "60000",
+    "npm_config_fetch_retry_mintimeout": "10000",
+    "npm_config_force": "",
+    "npm_config_git": "git",
+    "npm_config_git_tag_version": "true",
+    "npm_config_global": "",
+    "npm_config_globalconfig": "C:\\Users\\LUCAS\\AppData\\Roaming\\npm\\etc\\npmrc",
+    "npm_config_globalignorefile": "C:\\Users\\LUCAS\\AppData\\Roaming\\npm\\etc\\npmignore",
+    "npm_config_global_style": "",
+    "npm_config_group": "",
+    "npm_config_ham_it_up": "",
+    "npm_config_heading": "npm",
+    "npm_config_https_proxy": "",
+    "npm_config_if_present": "",
+    "npm_config_ignore_prepublish": "",
+    "npm_config_ignore_scripts": "",
+    "npm_config_init_author_email": "",
+    "npm_config_init_author_name": "",
+    "npm_config_init_author_url": "",
+    "npm_config_init_license": "ISC",
+    "npm_config_init_module": "C:\\Users\\LUCAS\\.npm-init.js",
+    "npm_config_init_version": "1.0.0",
+    "npm_config_json": "",
+    "npm_config_key": "",
+    "npm_config_legacy_bundling": "",
+    "npm_config_link": "",
+    "npm_config_local_address": "",
+    "npm_config_loglevel": "notice",
+    "npm_config_logs_max": "10",
+    "npm_config_long": "",
+    "npm_config_maxsockets": "50",
+    "npm_config_message": "%s",
+    "npm_config_metrics_registry": "https://registry.npmjs.org/",
+    "npm_config_node_gyp": "C:\\Program Files\\nodejs\\node_modules\\npm\\node_modules\\node-gyp\\bin\\node-gyp.js",
+    "npm_config_node_options": "",
+    "npm_config_node_version": "12.10.0",
+    "npm_config_noproxy": "",
+    "npm_config_offline": "",
+    "npm_config_onload_script": "",
+    "npm_config_only": "",
+    "npm_config_optional": "true",
+    "npm_config_otp": "",
+    "npm_config_package_lock": "true",
+    "npm_config_package_lock_only": "",
+    "npm_config_parseable": "",
+    "npm_config_prefer_offline": "",
+    "npm_config_prefer_online": "",
+    "npm_config_prefix": "C:\\Users\\LUCAS\\AppData\\Roaming\\npm",
+    "npm_config_preid": "",
+    "npm_config_production": "",
+    "npm_config_progress": "true",
+    "npm_config_proxy": "",
+    "npm_config_read_only": "",
+    "npm_config_rebuild_bundle": "true",
+    "npm_config_registry": "https://registry.npmjs.org/",
+    "npm_config_rollback": "true",
+    "npm_config_save": "true",
+    "npm_config_save_bundle": "",
+    "npm_config_save_dev": "",
+    "npm_config_save_exact": "",
+    "npm_config_save_optional": "",
+    "npm_config_save_prefix": "^",
+    "npm_config_save_prod": "",
+    "npm_config_scope": "",
+    "npm_config_scripts_prepend_node_path": "warn-only",
+    "npm_config_script_shell": "",
+    "npm_config_searchexclude": "",
+    "npm_config_searchlimit": "20",
+    "npm_config_searchopts": "",
+    "npm_config_searchstaleness": "900",
+    "npm_config_send_metrics": "",
+    "npm_config_shell": "C:\\Windows\\system32\\cmd.exe",
+    "npm_config_shrinkwrap": "true",
+    "npm_config_sign_git_commit": "",
+    "npm_config_sign_git_tag": "",
+    "npm_config_sso_poll_frequency": "500",
+    "npm_config_sso_type": "oauth",
+    "npm_config_strict_ssl": "true",
+    "npm_config_tag": "latest",
+    "npm_config_tag_version_prefix": "v",
+    "npm_config_timing": "",
+    "npm_config_tmp": "C:\\Users\\LUCAS\\AppData\\Local\\Temp",
+    "npm_config_umask": "0000",
+    "npm_config_unicode": "",
+    "npm_config_unsafe_perm": "true",
+    "npm_config_update_notifier": "true",
+    "npm_config_usage": "",
+    "npm_config_user": "",
+    "npm_config_userconfig": "C:\\Users\\LUCAS\\.npmrc",
+    "npm_config_user_agent": "npm/6.10.3 node/v12.10.0 win32 x64",
+    "npm_config_version": "",
+    "npm_config_versions": "",
+    "npm_config_viewer": "browser",
+    "npm_execpath": "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js",
+    "npm_lifecycle_event": "start:dev",
+    "npm_lifecycle_script": "concurrently --kill-others \"npm run start:client\" \"npm run start:server\"",
+    "npm_node_execpath": "C:\\Program Files\\nodejs\\node.exe",
+    "npm_package_author": "",
+    "npm_package_dependencies_express": "^4.17.1",
+    "npm_package_dependencies_i18next": "^19.9.2",
+    "npm_package_dependencies_node_fetch": "^2.6.1",
+    "npm_package_dependencies_react": "^17.0.1",
+    "npm_package_dependencies_react_dom": "^17.0.1",
+    "npm_package_dependencies_react_i18next": "^11.8.10",
+    "npm_package_dependencies_react_router_dom": "^5.2.0",
+    "npm_package_description": "",
+    "npm_package_devDependencies_babel_jest": "^26.6.3",
+    "npm_package_devDependencies_babel_loader": "^8.2.2",
+    "npm_package_devDependencies_concurrently": "^5.3.0",
+    "npm_package_devDependencies_css_loader": "^5.0.1",
+    "npm_package_devDependencies_jest": "^26.6.3",
+    "npm_package_devDependencies_mini_css_extract_plugin": "^1.3.4",
+    "npm_package_devDependencies_nodemon": "^2.0.7",
+    "npm_package_devDependencies_node_sass": "^5.0.0",
+    "npm_package_devDependencies_sass_loader": "^10.1.1",
+    "npm_package_devDependencies_webpack": "^5.17.0",
+    "npm_package_devDependencies_webpack_cli": "^4.4.0",
+    "npm_package_devDependencies_webpack_dev_server": "^3.11.2",
+    "npm_package_devDependencies__babel_core": "^7.12.10",
+    "npm_package_devDependencies__babel_node": "^7.12.10",
+    "npm_package_devDependencies__babel_preset_env": "^7.12.11",
+    "npm_package_devDependencies__babel_preset_react": "^7.12.10",
+    "npm_package_devDependencies__types_jest": "^26.0.20",
+    "npm_package_gitHead": "e309d7ec9d5dce3ee3f474a9fc0eaa75c3521dc2",
+    "npm_package_license": "ISC",
+    "npm_package_main": "index.js",
+    "npm_package_name": "ProyectoML",
+    "npm_package_readmeFilename": "README.md",
+    "npm_package_scripts_build": "NODE_ENV=production webpack",
+    "npm_package_scripts_build_dev": "webpack",
+    "npm_package_scripts_start": "babel-node ./src/server/index.js",
+    "npm_package_scripts_start_client": "webpack --watch",
+    "npm_package_scripts_start_dev": "concurrently --kill-others \"npm run start:client\" \"npm run start:server\"",
+    "npm_package_scripts_start_server": "nodemon --exec babel-node src/server/index.js",
+    "npm_package_scripts_test": "jest --coverage",
+    "npm_package_version": "1.0.0",
+    "NUMBER_OF_PROCESSORS": "4",
+    "OneDrive": "C:\\Users\\LUCAS\\OneDrive",
+    "ORIGINAL_PATH": "C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\Users\\LUCAS\\bin;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0;C:\\Program Files (x86)\\AMD\\ATI.ACE\\Core-Static;C:\\Program Files\\MongoDB\\Server\\3.2\\bin;C:\\Program Files\\nodejs;C:\\Program Files\\Git\\cmd;C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin;C:\\Users\\LUCAS\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\LUCAS\\AppData\\Roaming\\npm",
+    "ORIGINAL_TEMP": "C:/Users/LUCAS/AppData/Local/Temp",
+    "ORIGINAL_TMP": "C:/Users/LUCAS/AppData/Local/Temp",
+    "OS": "Windows_NT",
+    "Path": "C:\\Program Files\\nodejs\\node_modules\\npm\\node_modules\\npm-lifecycle\\node-gyp-bin;C:\\Users\\LUCAS\\Desktop\\challengePokemon\\node_modules\\.bin;C:\\Users\\LUCAS\\bin;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\local\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\Users\\LUCAS\\bin;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0;C:\\Program Files (x86)\\AMD\\ATI.ACE\\Core-Static;C:\\Program Files\\MongoDB\\Server\\3.2\\bin;C:\\Program Files\\nodejs;C:\\Program Files\\Git\\cmd;C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin;C:\\Users\\LUCAS\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\LUCAS\\AppData\\Roaming\\npm;C:\\Program Files\\Git\\usr\\bin\\vendor_perl;C:\\Program Files\\Git\\usr\\bin\\core_perl",
+    "PATH": "C:\\Program Files\\nodejs\\node_modules\\npm\\node_modules\\npm-lifecycle\\node-gyp-bin;C:\\Users\\LUCAS\\Desktop\\challengePokemon\\node_modules\\.bin;C:\\Users\\LUCAS\\bin;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\local\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\Users\\LUCAS\\bin;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0;C:\\Program Files (x86)\\AMD\\ATI.ACE\\Core-Static;C:\\Program Files\\MongoDB\\Server\\3.2\\bin;C:\\Program Files\\nodejs;C:\\Program Files\\Git\\cmd;C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin;C:\\Users\\LUCAS\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\LUCAS\\AppData\\Roaming\\npm;C:\\Program Files\\Git\\usr\\bin\\vendor_perl;C:\\Program Files\\Git\\usr\\bin\\core_perl",
+    "PATHEXT": ".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JSE;.WSF;.WSH;.MSC",
+    "PKG_CONFIG_PATH": "C:\\Program Files\\Git\\mingw64\\lib\\pkgconfig;C:\\Program Files\\Git\\mingw64\\share\\pkgconfig",
+    "PLINK_PROTOCOL": "ssh",
+    "PROCESSOR_ARCHITECTURE": "AMD64",
+    "PROCESSOR_IDENTIFIER": "Intel64 Family 6 Model 60 Stepping 3, GenuineIntel",
+    "PROCESSOR_LEVEL": "6",
+    "PROCESSOR_REVISION": "3c03",
+    "ProgramData": "C:\\ProgramData",
+    "PROGRAMFILES": "C:\\Program Files",
+    "ProgramFiles(x86)": "C:\\Program Files (x86)",
+    "ProgramW6432": "C:\\Program Files",
+    "PROMPT": "$P$G",
+    "PSModulePath": "C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\",
+    "PUBLIC": "C:\\Users\\Public",
+    "PWD": "C:/Users/LUCAS/Desktop/challengePokemon",
+    "SESSIONNAME": "Console",
+    "SHELL": "C:\\Program Files\\Git\\usr\\bin\\bash.exe",
+    "SHLVL": "2",
+    "SSH_ASKPASS": "C:/Program Files/Git/mingw64/libexec/git-core/git-gui--askpass",
+    "SYSTEMDRIVE": "C:",
+    "SYSTEMROOT": "C:\\Windows",
+    "TEMP": "C:\\Users\\LUCAS\\AppData\\Local\\Temp",
+    "TERM": "xterm",
+    "TMP": "C:\\Users\\LUCAS\\AppData\\Local\\Temp",
+    "TMPDIR": "C:\\Users\\LUCAS\\AppData\\Local\\Temp",
+    "USERDOMAIN": "LUCAS-PC",
+    "USERNAME": "LUCAS",
+    "USERPROFILE": "C:\\Users\\LUCAS",
+    "WINDIR": "C:\\Windows",
+    "windows_tracing_flags": "3",
+    "windows_tracing_logfile": "C:\\BVTBin\\Tests\\installpackage\\csilogfile.log",
+    "_": "C:/Program Files/nodejs/node.exe"
+  },
+  "sharedObjects": [
+    "C:\\Program Files\\nodejs\\node.exe",
+    "C:\\Windows\\SYSTEM32\\ntdll.dll",
+    "C:\\Windows\\system32\\kernel32.dll",
+    "C:\\Windows\\system32\\KERNELBASE.dll",
+    "C:\\Windows\\system32\\dbghelp.dll",
+    "C:\\Windows\\system32\\msvcrt.dll",
+    "C:\\Windows\\system32\\WS2_32.dll",
+    "C:\\Windows\\system32\\RPCRT4.dll",
+    "C:\\Windows\\system32\\NSI.dll",
+    "C:\\Windows\\system32\\ADVAPI32.dll",
+    "C:\\Windows\\SYSTEM32\\sechost.dll",
+    "C:\\Windows\\system32\\USER32.dll",
+    "C:\\Windows\\system32\\GDI32.dll",
+    "C:\\Windows\\system32\\LPK.dll",
+    "C:\\Windows\\system32\\USP10.dll",
+    "C:\\Windows\\system32\\IPHLPAPI.DLL",
+    "C:\\Windows\\system32\\WINNSI.DLL",
+    "C:\\Windows\\system32\\PSAPI.DLL",
+    "C:\\Windows\\system32\\USERENV.dll",
+    "C:\\Windows\\system32\\profapi.dll",
+    "C:\\Windows\\system32\\CRYPT32.dll",
+    "C:\\Windows\\system32\\MSASN1.dll",
+    "C:\\Windows\\system32\\bcrypt.dll",
+    "C:\\Windows\\system32\\WINMM.dll",
+    "C:\\Windows\\system32\\IMM32.DLL",
+    "C:\\Windows\\system32\\MSCTF.dll",
+    "C:\\Windows\\system32\\api-ms-win-core-synch-l1-2-0.DLL",
+    "C:\\Windows\\system32\\powrprof.dll",
+    "C:\\Windows\\system32\\SETUPAPI.dll",
+    "C:\\Windows\\system32\\CFGMGR32.dll",
+    "C:\\Windows\\system32\\OLEAUT32.dll",
+    "C:\\Windows\\system32\\ole32.dll",
+    "C:\\Windows\\system32\\DEVOBJ.dll",
+    "C:\\Windows\\system32\\uxtheme.dll",
+    "C:\\Windows\\system32\\mswsock.dll",
+    "C:\\Windows\\System32\\wshtcpip.dll",
+    "C:\\Windows\\System32\\wship6.dll",
+    "C:\\Windows\\system32\\bcryptprimitives.dll",
+    "C:\\Windows\\system32\\apphelp.dll",
+    "C:\\Windows\\system32\\dhcpcsvc6.DLL",
+    "C:\\Windows\\system32\\dhcpcsvc.DLL",
+    "C:\\Windows\\system32\\NLAapi.dll",
+    "C:\\Windows\\system32\\napinsp.dll",
+    "C:\\Windows\\system32\\pnrpnsp.dll",
+    "C:\\Windows\\system32\\DNSAPI.dll",
+    "C:\\Windows\\System32\\winrnr.dll",
+    "C:\\Windows\\system32\\wshbth.dll"
+  ]
+}
