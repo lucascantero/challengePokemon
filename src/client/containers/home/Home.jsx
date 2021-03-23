@@ -33,14 +33,13 @@ const Home = () => {
                         }
                     </ul>
                     <div className="home__groupButton">
-                    <button className="home__button" onClick={() => setOffset(offset - 5)}>
-                        {t('previous')}
-                </button>
-                    <button className="home__button" onClick={() => setOffset(offset + 5)}>
-                        {t('next')}
-                </button>
-                    </div>   
-                    
+                        <button className="home__button" disabled={!offset} onClick={() => setOffset(offset - 5)}>
+                            {t('previous')}
+                        </button>
+                        <button className="home__button" onClick={() => setOffset(offset + 5)}>
+                            {t('next')}
+                        </button>
+                    </div>
                 </div>
             </div>
         </>

@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing Header Should match snapshot 1`] = `"<div class=\\"searchBox__contenedor\\"><div class=\\"buttonLanguage__wrapper\\"><button class=\\"buttonLanguage__button\\">en</button><button class=\\"buttonLanguage__button\\">es</button></div></div>"`;

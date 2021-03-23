@@ -10,7 +10,7 @@ exports[`Testing renderControllers Should match snapshot 1`] = `
                     <title>App Test</title>            
                 </head>
                 <body>   
-                    <div id=\\"root\\"> <div class=\\"publicaciones__contenedor\\"><div class=\\"publicaciones__wrapper\\"><button>Anterior</button><button>Siguiente</button><button>INGLES</button><button>ESPAÑOL</button><h1>Hola</h1><ul class=\\"card__ul\\"></ul></div></div> </div>
+                    <div id=\\"root\\"> <div class=\\"searchBox__contenedor\\"><div class=\\"buttonLanguage__wrapper\\"><button class=\\"buttonLanguage__button\\">Inglés</button><button class=\\"buttonLanguage__button\\">Español</button></div></div><div class=\\"home__contenedor\\"><div class=\\"home__wrapper\\"><ul class=\\"home__ul\\"></ul><div class=\\"home__groupButton\\"><button class=\\"home__button\\" disabled=\\"\\">Anterior</button><button class=\\"home__button\\">Siguiente</button></div></div></div> </div>
                     <script src='/public/dist/static/app.js'></script>
                 </body>
             </html>

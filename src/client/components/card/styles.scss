@@ -33,3 +33,11 @@
         text-align: center;
       }
 }
+
+@media (max-width:768px) {
+  .card {
+    &__li {
+         margin: 0px auto;
+      }
+  }
+}

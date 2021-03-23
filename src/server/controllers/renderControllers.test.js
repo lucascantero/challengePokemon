@@ -5,10 +5,10 @@ describe('Testing renderControllers', () => {
     it('Should match snapshot', () => {
         
         const req = {url: '/'};
-        const res = {send: jest.fn()}
-    
+        const res = {send: jest.fn()};
+        const next = jest.fn();
 
-        renderControllers(req,res);
+        renderControllers(req,res,next);
 
         const html = res.send.mock.calls[0][0];
 

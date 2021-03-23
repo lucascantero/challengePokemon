@@ -4,21 +4,30 @@ const pokemon = async (req, res,next) => {
 
     try {
 
-        let url = `https://pokeapi.co/api/v2/pokemon/${req.params.id}`
+        let urls = [
+            `https://pokeapi.co/api/v2/pokemon/${req.params.id}`,
+            `https://pokeapi.co/api/v2/pokemon-species/${req.params.id}`
+        ]
 
-        const response = await fetch(url);
-        const data = await response.json();
+        let requests = urls.map(url => fetch(url));
 
-        let abilities = data.abilities.map(item => {
-            return item.ability.name
+        const response = await Promise.all(requests);
+        const data = await Promise.all([response[0].json(), response[1].json()]);
+
+        let abilities = data[0].abilities.map(item => {
+            return capitalize(item.ability.name)
         })
 
-        let dataResult =
-        {
-            name: data.name,
-            img: data.sprites.other.dream_world.front_default,
-            id: data.id,
-            abilities
+        function capitalize(word) {
+            return word[0].toUpperCase() + word.slice(1);
+        }
+
+        let dataResult = {
+            name: capitalize(data[0].name),
+            img: data[0].sprites.other.dream_world.front_default,
+            id: data[0].id,
+            abilities,
+            description: data[1].flavor_text_entries[0].flavor_text
         }
 
         res.json(dataResult)

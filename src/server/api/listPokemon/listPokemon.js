@@ -11,14 +11,18 @@ const listPokemon = async (req, res, next) => {
 
         let arrPokemon = await Promise.all(data.results.map(async item => {
 
-            let test = await fetch(item.url)
-            let dataFinal = await test.json();
-            return dataFinal
+            let response = await fetch(item.url)
+            let data = await response.json();
+            return data
         }));
+
+        function capitalize(word) {
+            return word[0].toUpperCase() + word.slice(1);
+        }
 
         let dataResult = arrPokemon.map(item => {
             return {
-                name: item.name,
+                name: capitalize(item.name),
                 img: item.sprites.other.dream_world.front_default,
                 id: item.id
             }
