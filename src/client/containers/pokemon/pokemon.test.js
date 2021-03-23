@@ -3,6 +3,8 @@ import Pokemon from './Pokemon.jsx';
 import { act } from 'react-dom/test-utils';
 import { render, unmountComponentAtNode } from 'react-dom';
 import { MemoryRouter } from 'react-router-dom';
+import { I18nextProvider } from 'react-i18next';
+import i18next from '../../i18n/index';
 
 describe('Testing Pokemon', () => {
 
@@ -37,7 +39,7 @@ describe('Testing Pokemon', () => {
             );
 
         await act(async () => {
-            return render(<MemoryRouter> <Pokemon /> </MemoryRouter>, container);
+            return render(<MemoryRouter> <I18nextProvider i18n={i18next}> <Pokemon /> </I18nextProvider> </MemoryRouter>, container);
         });
 
         expect(container.innerHTML).toMatchSnapshot();

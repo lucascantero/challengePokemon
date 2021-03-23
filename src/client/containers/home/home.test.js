@@ -3,6 +3,8 @@ import Home from './Home.jsx';
 import { act } from 'react-dom/test-utils';
 import { render, unmountComponentAtNode } from 'react-dom';
 import { MemoryRouter } from 'react-router-dom';
+import { I18nextProvider } from 'react-i18next';
+import i18next from '../../i18n/index';
 
 
 describe('Testing Home', () => {
@@ -37,7 +39,7 @@ describe('Testing Home', () => {
             );
 
         await act(async () => {
-            return render(<MemoryRouter> <Home /> </MemoryRouter>, container);
+            return render(<MemoryRouter> <I18nextProvider i18n={i18next}> <Home /> </I18nextProvider></MemoryRouter>, container);
         });
 
         expect(container.innerHTML).toMatchSnapshot();

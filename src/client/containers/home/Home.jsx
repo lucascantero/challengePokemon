@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Card from '../../components/card/Card'
-import { useTranslation } from 'react-i18next';
+import { useTranslation, withTranslation } from 'react-i18next';
 import Header from '../../components/header/Header'
 
 const Home = () => {
@@ -46,4 +46,4 @@ const Home = () => {
     )
 }
 
-export default Home;
+export default withTranslation()(Home);

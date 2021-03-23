@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from "react-router";
 import Header from '../../components/header/Header';
-import { useTranslation } from 'react-i18next';
+import { useTranslation, withTranslation } from 'react-i18next';
 
 const Pokemon = () => {
 
@@ -56,4 +56,4 @@ const Pokemon = () => {
     )
 }
 
-export default Pokemon;
+export default withTranslation()(Pokemon);

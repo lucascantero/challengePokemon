@@ -1,10 +1,9 @@
 import React from 'react';
-import i18n from 'i18next'
-import { useTranslation } from 'react-i18next';
+import { useTranslation, withTranslation } from 'react-i18next';
 
 const ButtonLanguage = () => {
 
-    const { t } = useTranslation();
+    const { t, i18n } = useTranslation();
 
     const changeLanguage = ln => {
         return () => {
@@ -21,4 +20,4 @@ const ButtonLanguage = () => {
 
 }
 
-export default ButtonLanguage;
+export default withTranslation()(ButtonLanguage);
