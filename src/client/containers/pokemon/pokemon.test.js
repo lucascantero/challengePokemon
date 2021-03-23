@@ -4,7 +4,7 @@ import { act } from 'react-dom/test-utils';
 import { render, unmountComponentAtNode } from 'react-dom';
 import { MemoryRouter } from 'react-router-dom';
 
-describe('Testing Product', () => {
+describe('Testing Pokemon', () => {
 
     let container = null;
 
